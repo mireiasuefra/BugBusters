@@ -1,5 +1,5 @@
 package service;
 
-public interface GestionJuegosService {
+public interface GestionJuegosService{
 
 }
