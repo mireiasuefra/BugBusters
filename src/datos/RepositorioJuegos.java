@@ -4,3 +4,4 @@ public interface RepositorioJuegos {
 
 	void cargarDatosCSV();
 }
+
