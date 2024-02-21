@@ -1,7 +1,13 @@
 package datos;
 
+import model.Juego;
+import java.util.List;
+
 public interface RepositorioJuegos {
 
-	void cargarDatosCSV();
-}
+	int cargarDatosCSV();
 
+	List<Juego> listadoJuegos();
+	
+	
+}
