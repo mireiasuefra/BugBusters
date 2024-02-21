@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import model.Genre;
 import model.Juego;
+import model.Platform;
 
 public class RepositorioJuegosImpl implements RepositorioJuegos {
 
@@ -34,9 +36,9 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 		Juego juego = new Juego();
 
 		juego.setNombre(datosJuego[1]);
-		juego.setPlataforma(datosJuego[2]);
-		juego.setFechaPublicacion(datosJuego[3]);
-		juego.setGenero(datosJuego[4]);
+		juego.setPlataforma(Platform.valueOf(datosJuego[2]));
+		juego.setFechaPublicacion(Integer.parseInt(datosJuego[3]));
+		juego.setGenero(Genre.valueOf(datosJuego[4]));
 		juego.setEditor(datosJuego[5]);
 
 		return juego;
