@@ -12,21 +12,27 @@ import model.Platform;
 
 public class RepositorioJuegosImpl implements RepositorioJuegos {
 
-	
-	//comentario para probar que hay cambios en mainArnau
-	
-	private final List<Juego> listado = new ArrayList<Juego>();
+	// comentario para probar que hay cambios en mainArnau
+
+	private List<Juego> listado = new ArrayList<Juego>();
+
+//	private int longitud
 
 	@Override
-	public void cargarDatosCSV() {
+	public int cargarDatosCSV() {
 
+		int longCSV = 0;
 		try (Scanner scanner = new Scanner(new File("res/juegos.csv"))) {
 			scanner.nextLine();
-			while (scanner.hasNextLine())
+			while (scanner.hasNextLine()) {
 				listado.add(leerJuegoString(scanner.nextLine()));
+				++longCSV;
+			}
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getMessage() + "res/juegos.csv not found");
 		}
+		return longCSV;
+
 	}
 
 	private Juego leerJuegoString(String linea) {
@@ -34,14 +40,27 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 		String[] datosJuego = linea.split(",");
 
 		Juego juego = new Juego();
-
+		int fecha = 0;
 		juego.setNombre(datosJuego[1]);
-		juego.setPlataforma(Platform.valueOf(datosJuego[2]));
-		juego.setFechaPublicacion(Integer.parseInt(datosJuego[3]));
-		juego.setGenero(Genre.valueOf(datosJuego[4]));
+		juego.setPlataforma(Platform.fromString(datosJuego[2]));
+		try {
+			fecha = Integer.parseInt(datosJuego[3]);
+		} catch (NumberFormatException e) {
+			e.getMessage();
+		} finally {
+			juego.setFechaPublicacion(fecha);
+		}
+
+		juego.setGenero(Genre.fromString(datosJuego[4]));
 		juego.setEditor(datosJuego[5]);
 
 		return juego;
+
+	}
+
+	@Override
+	public List<Juego> getListado() {
+		return listado;
 	}
 
 }
