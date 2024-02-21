@@ -1,7 +1,7 @@
 package model;
 
 public enum Genre {
-	DEPORTE("Sports"), PLATFORM("Platform"), RACING("Racing"), ROLE_PLAYING("Role-Playing"), PUZZLE("Puzzle"),
+	SPORTS("Sports"), PLATFORM("Platform"), RACING("Racing"), ROLE_PLAYING("Role-Playing"), PUZZLE("Puzzle"),
 	MISC("Misc"), ACTION("Action"), SHOOTER("Shooter"), FIGHTING("Fighting"), SIMULATION("Simulation");
 	
 	private final String genero;
@@ -13,5 +13,14 @@ public enum Genre {
     public String getGenero() {
         return genero;
     }
-
+    
+    public static Genre fromString(String text) {
+        for (Genre g : Genre.values()) {
+            if (g.genero.equalsIgnoreCase(text)) {
+                return g;
+            }
+        }
+        return null;
+    }
 }
+
