@@ -15,11 +15,14 @@ import static org.junit.Assert.assertTrue;
 import datos.RepositorioJuegosImpl;
 import datos.RepositorioJuegos;
 
+import model.Juego;
+
 public class cargaDatosTest {
 	
 	private static byte cont = 1;
 	private RepositorioJuegos repoJuegos = new RepositorioJuegosImpl();
 	private static Logger logger;
+//	private List<Juego> listado;
 
 		static {
 			try {
@@ -49,9 +52,8 @@ public class cargaDatosTest {
 		public void testLongitudListado() {
 			logger.info("Test::testLongitudListado(): Que listado contenga tantos valores como el CSV");
 			int longitudCSV = repoJuegos.cargarDatosCSV();
-			int longitudListado = repoJuegos.getListado().size();
+			int longitudListado = repoJuegos.listadoJuegos().size();
 			assertTrue(longitudCSV == longitudListado);
 		}
-		
-	
 }
+

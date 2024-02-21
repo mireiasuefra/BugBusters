@@ -85,7 +85,7 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 	}
 
 	@Override
-	public List<Juego> getListado() {
+	public List<Juego> listadoJuegos() {
 		return listado;
 	}
 
