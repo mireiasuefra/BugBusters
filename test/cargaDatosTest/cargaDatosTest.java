@@ -15,14 +15,11 @@ import static org.junit.Assert.assertTrue;
 import datos.RepositorioJuegosImpl;
 import datos.RepositorioJuegos;
 
-import model.Juego;
-
 public class cargaDatosTest {
 	
 	private static byte cont = 1;
 	private RepositorioJuegos repoJuegos = new RepositorioJuegosImpl();
 	private static Logger logger;
-//	private List<Juego> listado;
 
 		static {
 			try {
@@ -55,4 +52,6 @@ public class cargaDatosTest {
 			int longitudListado = repoJuegos.getListado().size();
 			assertTrue(longitudCSV == longitudListado);
 		}
+		
+	
 }
