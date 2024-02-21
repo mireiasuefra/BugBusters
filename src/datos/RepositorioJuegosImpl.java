@@ -10,6 +10,9 @@ import model.Juego;
 
 public class RepositorioJuegosImpl implements RepositorioJuegos {
 
+	
+	//comentario para probar que hay cambios en mainArnau
+	
 	private final List<Juego> listado = new ArrayList<Juego>();
 
 	@Override
