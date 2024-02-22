@@ -12,9 +12,14 @@ public class GUI {
 
 		System.out.println(">>>>>>> MENÚ LUCASTEAM <<<<<<<");
 		System.out.println("\t1. Mostrar listado Juegos");
+		System.out.println("\t2. Dar de Alta un Juego");
 		System.out.println(">>>>>>>>>>>        <<<<<<<<<<<");
 
 	}
+	
+
+	
+	
 
 	public static void mostrarListaJuegos(List<Juego> listado) {
 
