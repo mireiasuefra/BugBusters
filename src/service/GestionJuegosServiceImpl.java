@@ -39,7 +39,7 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 		String plataforma = Utilidades.leerMensaje("\nIntroduce Plataforma de la lista: ");
 
 		GUI.mostrarListaGeneros();
-		String genero = Utilidades.leerMensaje("\nIntroduce Género de la lista");
+		String genero = Utilidades.leerMensaje("\nIntroduce Género de la lista: ");
 		Juego juego = new Juego(nombre, fechaPublicacion, editor, Platform.fromString(plataforma),
 				Genre.fromString(genero));
 
