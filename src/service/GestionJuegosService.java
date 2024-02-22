@@ -20,5 +20,4 @@ public interface GestionJuegosService {
 
 	List<Juego> 	filtrarPlataforma(Platform plataforma);
 
-	Set<String> listarEditores();
 }
