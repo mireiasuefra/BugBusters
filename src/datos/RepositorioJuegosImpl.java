@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import gui.GUI;
+
 import model.Genre;
 import model.Juego;
 import model.Platform;
