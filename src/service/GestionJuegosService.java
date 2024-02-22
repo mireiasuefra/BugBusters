@@ -1,6 +1,8 @@
 package service;
 
 public interface GestionJuegosService {
-	public void cargarDatosCSV();
-
+	
+	void cargarDatosCSV();
+	
+	void crearJuego();
 }
