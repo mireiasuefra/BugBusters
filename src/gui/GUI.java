@@ -2,7 +2,9 @@ package gui;
 
 import java.util.List;
 
+import model.Genre;
 import model.Juego;
+import model.Platform;
 
 public class GUI {
 
@@ -30,6 +32,18 @@ public class GUI {
 		}
 		System.out.println("\n>>>  Se han mostrado " + cantJuegos + " juegos\n");
 
+	}
+
+	public static void mostrarListaPlataforma() {
+		System.out.println("\n>>> Mostrando Plataformas disponibles");
+		for (Platform p : Platform.values())
+			System.out.println("--> " + p.getPlataforma());
+	}
+
+	public static void mostrarListaGeneros() {
+		System.out.println("\n>>> Mostrando Géneros disponibles");
+		for (Genre g : Genre.values())
+			System.out.println("--> " + g.getGenero());
 	}
 
 }

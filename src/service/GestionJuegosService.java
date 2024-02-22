@@ -1,6 +1,14 @@
 package service;
 
+import java.util.List;
+
+import model.Juego;
+
+
 public interface GestionJuegosService {
-	public void cargarDatosCSV();
+	
+	void cargarDatosCSV();
+	List<Juego> listarJuegos();
+	void crearJuego();
 
 }
