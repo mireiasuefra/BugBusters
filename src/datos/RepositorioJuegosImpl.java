@@ -87,9 +87,29 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 		return listado;
 	}
 	
+	@Override
 	public void darDeAlta(Juego juego) {
 		listado.add(juego);
 	}
-
+	
+	@Override
+	public List<Juego> listadoPorGenero(Genre genero) {
+		List<Juego> listadoFiltrado = new ArrayList<Juego>();
+		for(Juego j: listado) {
+			if(j.getGenero().equals(genero)) 
+				listadoFiltrado.add(j);	
+		}
+		return listadoFiltrado;
+	}
+	
+	@Override
+	public List<Juego> listadoPorPlataforma(Platform plataforma) {
+		List<Juego> listadoFiltrado = new ArrayList<Juego>();
+		for(Juego j: listado) {
+			if(j.getPlataforma().equals(plataforma)) 
+				listadoFiltrado.add(j);	
+		}
+		return listadoFiltrado;
+	}
 }
 

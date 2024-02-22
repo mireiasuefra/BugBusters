@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import datos.RepositorioJuegosImpl;
@@ -96,5 +97,39 @@ public class juegosTest {
 		repoJuegos.darDeAlta(new Juego("GTA VI", 2026, "Rockstar Games", Platform.PC, Genre.ACTION));
 		
 		assertTrue((longitudAntes + 1) == listado.size());
+	}
+	
+	@Test
+	public void testListadoGeneroAction() {
+		logger.info("Test::testListadoGenero(): Comprobar que en el archivo original y los juegos filtrados por Genero contengan la misma cantidad de juegos Genero = Action");
+		int longitudCSV = repoJuegos.cargarDatosCSV();
+		
+		List<Juego> listadoFiltrado = new ArrayList<Juego>();
+		for(Juego j: repoJuegos.listadoJuegos()) {
+			if(j.getGenero().equals(Genre.ACTION)) 
+				listadoFiltrado.add(j);	
+		}
+		int longitudListado = listadoFiltrado.size();
+		
+		List<Juego> listadoTesting = repoJuegos.listadoPorGenero(Genre.ACTION);
+				
+		assertTrue(longitudListado == listadoTesting.size());
+	}
+	
+	@Test
+	public void testListadoPlataformaGBA() {
+		logger.info("Test::testListadoPlataforma(): Comprobar que en el archivo original y los juegos filtrados por Plataforma contengan la misma cantidad de juegos Plataforma = GBA");
+		int longitudCSV = repoJuegos.cargarDatosCSV();
+		
+		List<Juego> listadoFiltrado = new ArrayList<Juego>();
+		for(Juego j: repoJuegos.listadoJuegos()) {
+			if(j.getPlataforma().equals(Platform.GBA)) 
+				listadoFiltrado.add(j);	
+		}
+		int longitudListado = listadoFiltrado.size();
+		
+		List<Juego> listadoTesting = repoJuegos.listadoPorPlataforma(Platform.GBA);
+				
+		assertTrue(longitudListado == listadoTesting.size());
 	}
 }

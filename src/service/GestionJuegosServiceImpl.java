@@ -43,4 +43,16 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 		listaJuegos.darDeAlta(juego);
 	}
 
+	@Override
+	public List<Juego> filtrarGenero(Genre genero) {
+
+		return listaJuegos.listadoPorGenero(genero);
+	}
+
+	@Override
+	public List<Juego> filtrarPlataforma(Platform plataforma) {
+
+		return listaJuegos.listadoPorPlataforma(plataforma);
+	}
+
 }
