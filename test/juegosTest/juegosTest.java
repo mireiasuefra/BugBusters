@@ -18,12 +18,15 @@ import gui.GUI;
 import model.Genre;
 import model.Juego;
 import model.Platform;
+import service.GestionJuegosService;
+import service.GestionJuegosServiceImpl;
 import datos.RepositorioJuegos;
 
 public class juegosTest {
 
 	private static byte cont = 1;
 	private RepositorioJuegos repoJuegos = new RepositorioJuegosImpl();
+	GestionJuegosService service = new GestionJuegosServiceImpl();		
 	private static Logger logger;
 
 	static {
@@ -131,5 +134,13 @@ public class juegosTest {
 		List<Juego> listadoTesting = repoJuegos.listadoPorPlataforma(Platform.GBA);
 				
 		assertTrue(longitudListado == listadoTesting.size());
+	}
+	
+	@Test
+	public void testListadoEditoresPostCreacion() {
+		logger.info("Test::testListadoEditoresPostCreacion(): Comprobar que el listado de editores añade 1 editor tras incorporar un juego nuevo");
+		int editoresPre = service.listarEditores().size();
+		service.crearJuego();				
+		assertTrue((editoresPre + 1) == service.listarEditores().size());
 	}
 }
