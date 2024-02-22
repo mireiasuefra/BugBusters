@@ -59,6 +59,9 @@ public class GestionJuegos {
 				List<Juego> listadoPlataforma = gestionJuegosService.filtrarPlataforma(plataforma);
 				GUI.mostrarListaJuegos(listadoPlataforma);
 				break;
+			case 5: //Mostrar lista Editores
+				GUI.mostrarListaEditores(gestionJuegosService.listarEditores());
+				break;
 			case 0: // Salir del programa
 				System.out.println("Saliendo del programa...");
 				try {

@@ -1,6 +1,7 @@
 package gui;
 
 import java.util.List;
+import java.util.Set;
 
 import model.Genre;
 import model.Juego;
@@ -15,6 +16,7 @@ public class GUI {
 		System.out.println("\t2. Dar de Alta un Juego");
 		System.out.println("\t3. Filtrar por Género");
 		System.out.println("\t4. Filtrar por Plataforma");
+		System.out.println("\t5. Mostrar lista Editores");
 		System.out.println("\t0. Salir");
 		System.out.println(">>>>>>>>>>>        <<<<<<<<<<<");
 
@@ -51,4 +53,14 @@ public class GUI {
 			System.out.println("--> " + g.getGenero());
 	}
 
+	public static int mostrarListaEditores(Set<String> editores) {
+		int cantidad = 0;
+		System.out.println("\n>>> Mostrando todos los Editores de los Videojuegos en el Repositorio");
+		for(String e: editores) {
+			System.out.println("--> " + e);
+			cantidad++;
+		}
+		System.out.println("\nExisten " + cantidad + " Editores diferentes en el repositorio\n");
+		return cantidad;
+	}
 }

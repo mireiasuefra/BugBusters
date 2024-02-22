@@ -58,5 +58,15 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 		return listaJuegos.listadoPorPlataforma(plataforma);
 	}
 
+	@Override
+	public Set<String> listarEditores() {
+
+		Set<String> editores = new HashSet<String>();
+		
+		for(Juego j: listaJuegos.listadoJuegos())
+			editores.add(j.getEditor());
+		
+		return editores;
+	}
 
 }
