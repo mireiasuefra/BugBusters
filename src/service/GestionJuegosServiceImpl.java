@@ -1,5 +1,7 @@
 package service;
 
+import java.util.List;
+
 import datos.RepositorioJuegos;
 import datos.RepositorioJuegosImpl;
 import gui.GUI;
