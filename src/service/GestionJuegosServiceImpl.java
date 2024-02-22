@@ -15,8 +15,6 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 	public void cargarDatosCSV() {
 		listaJuegos.cargarDatosCSV();
 	}
-
-	//test 
 	
 	@Override
 	public void crearJuego() {
