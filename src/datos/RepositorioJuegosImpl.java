@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import gui.GUI;
 import model.Genre;
 import model.Juego;
 import model.Platform;
@@ -31,35 +32,60 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getMessage() + "res/juegos.csv not found");
 		}
+		GUI.mostrarListaJuegos(listado);
 		return longCSV;
 
 	}
 
 	private Juego leerJuegoString(String linea) {
 
-		String[] datosJuego = linea.split(",");
+//		String[] datosJuego = linea.split(",(?!\\s)");
+		
 
 		Juego juego = new Juego();
 		int fecha = 0;
-		juego.setNombre(datosJuego[1]);
-		juego.setPlataforma(Platform.fromString(datosJuego[2]));
-		try {
-			fecha = Integer.parseInt(datosJuego[3]);
-		} catch (NumberFormatException e) {
-			e.getMessage();
-		} finally {
-			juego.setFechaPublicacion(fecha);
-		}
+		
+		
+		if(!linea.contains("\"")) {
+			String[] datosJuego = linea.split(",");
+			datosJuego = linea.split(",");
+			juego.setNombre(datosJuego[1]);
+			juego.setPlataforma(Platform.fromString(datosJuego[2]));
+			try {
+				fecha = Integer.parseInt(datosJuego[3]);
+			} catch (NumberFormatException e) {
+				e.getMessage();
+			} finally {
+				juego.setFechaPublicacion(fecha);
+			}
 
-		juego.setGenero(Genre.fromString(datosJuego[4]));
-		juego.setEditor(datosJuego[5]);
+			juego.setGenero(Genre.fromString(datosJuego[4]));
+			juego.setEditor(datosJuego[5]);
+		}		
 
+//		String[] datosJuego = linea.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)", -1);
+//		String modifiedLine = linea.replaceAll("(?<!\")\\,", "_");
+
+//		String[] datosJuego = modifiedLine.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
+//		String modifiedLine = linea.replaceAll(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", ";");
+
+//		String[] datosJuego = linea.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
+//		String[] datosJuego = modifiedLine.split("_");
+	
+//		System.out.println(datosJuego[0]);
+//		System.out.println(datosJuego[1]);
+//		System.out.println(datosJuego[2]);
+//		System.out.println(datosJuego[3]);
+//		System.out.println(datosJuego[4]);
+//		System.out.println(datosJuego[5]);
+
+		
 		return juego;
 
 	}
 
 	@Override
-	public List<Juego> getListado() {
+	public List<Juego> listadoJuegos() {
 		return listado;
 	}
 

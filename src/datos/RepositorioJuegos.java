@@ -7,5 +7,7 @@ public interface RepositorioJuegos {
 
 	int cargarDatosCSV();
 
-	List<Juego> getListado();
+	List<Juego> listadoJuegos();
+	
+	
 }

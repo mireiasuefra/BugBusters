@@ -2,7 +2,8 @@ package model;
 
 public enum Genre {
 	SPORTS("Sports"), PLATFORM("Platform"), RACING("Racing"), ROLE_PLAYING("Role-Playing"), PUZZLE("Puzzle"),
-	MISC("Misc"), ACTION("Action"), SHOOTER("Shooter"), FIGHTING("Fighting"), SIMULATION("Simulation");
+	MISC("Misc"), ACTION("Action"), SHOOTER("Shooter"), FIGHTING("Fighting"), SIMULATION("Simulation"),
+	ADVENTURE("Adventure"), STRATEGY("Strategy");
 	
 	private final String genero;
 
@@ -22,5 +23,4 @@ public enum Genre {
         }
         return null;
     }
-
 }

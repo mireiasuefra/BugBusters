@@ -52,7 +52,8 @@ public class cargaDatosTest {
 		public void testLongitudListado() {
 			logger.info("Test::testLongitudListado(): Que listado contenga tantos valores como el CSV");
 			int longitudCSV = repoJuegos.cargarDatosCSV();
-			int longitudListado = repoJuegos.getListado().size();
+			int longitudListado = repoJuegos.listadoJuegos().size();
 			assertTrue(longitudCSV == longitudListado);
 		}
 }
+
