@@ -29,6 +29,9 @@ public class GestionJuegos {
 				List<Juego> lista = gestionJuegosService.listarJuegos();
 				GUI.mostrarListaJuegos(lista);
 				break;
+			case 2: //Dar de alta
+				gestionJuegosService.crearJuego();
+				break;
 			case 0: //Salir del programa
 				System.out.println("Saliendo del programa...");
 				try {
