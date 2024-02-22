@@ -1,6 +1,9 @@
 package service;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import datos.RepositorioJuegos;
 import datos.RepositorioJuegosImpl;
@@ -53,6 +56,17 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 	public List<Juego> filtrarPlataforma(Platform plataforma) {
 
 		return listaJuegos.listadoPorPlataforma(plataforma);
+	}
+
+	@Override
+	public Set<String> listarEditores() {
+
+		Set<String> editores = new HashSet<String>();
+		
+		for(Juego j: listaJuegos.listadoJuegos())
+			editores.add(j.getEditor());
+		
+		return editores;
 	}
 
 }
