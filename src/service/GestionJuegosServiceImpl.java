@@ -40,7 +40,19 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 		Juego juego = new Juego(nombre, fechaPublicacion, editor, Platform.fromString(plataforma),
 				Genre.fromString(genero));
 
-//		listaJuegos.darDeAlta(juego);
+		listaJuegos.darDeAlta(juego);
+	}
+
+	@Override
+	public List<Juego> 	filtrarGenero(Genre genero) {
+
+	return listaJuegos.listadoPorGenero(genero);
+	}
+
+	@Override
+	public List<Juego> 	filtrarPlataforma(Platform plataforma) {
+
+		return listaJuegos.listadoPorPlataforma(plataforma);
 	}
 
 }
