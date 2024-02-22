@@ -3,7 +3,7 @@ package model;
 public enum Genre {
 	SPORTS("Sports"), PLATFORM("Platform"), RACING("Racing"), ROLE_PLAYING("Role-Playing"), PUZZLE("Puzzle"),
 	MISC("Misc"), ACTION("Action"), SHOOTER("Shooter"), FIGHTING("Fighting"), SIMULATION("Simulation"),
-	ADVENTURE("Adventure"), STRATEGY("Strategy");
+	ADVENTURE("Adventure"), STRATEGY("Strategy"), NULL("null");
 	
 	private final String genero;
 
