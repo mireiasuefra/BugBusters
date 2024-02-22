@@ -4,8 +4,11 @@ import java.util.List;
 
 import model.Juego;
 
-public interface GestionJuegosService{
-	public void cargarDatosCSV();
-	public List<Juego> listarJuegos();
+
+public interface GestionJuegosService {
+	
+	void cargarDatosCSV();
+	List<Juego> listarJuegos();
+	void crearJuego();
 
 }
