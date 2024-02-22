@@ -15,7 +15,7 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 	}
 
 	public List<Juego> listarJuegos() {
-		List<Juego> listado = listaJuegos.listadoTodos();
+		List<Juego> listado = listaJuegos.listadoJuegos();
 
 		return listado;
 	}
