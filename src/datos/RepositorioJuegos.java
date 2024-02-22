@@ -9,5 +9,5 @@ public interface RepositorioJuegos {
 
 	List<Juego> listadoJuegos();
 	
-	
+	void darDeAlta(Juego juego);
 }
