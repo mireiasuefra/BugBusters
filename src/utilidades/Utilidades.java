@@ -21,7 +21,7 @@ public class Utilidades {
 
 		while (!valido) {
 			try {
-				valor = new Scanner(System.in).nextInt();
+				valor = Integer.parseInt(new Scanner(System.in).nextLine());
 				valido = true;
 			} catch (NumberFormatException e) {
 				System.out.print("Eso no es un numero entero. Introduce un número: ");
