@@ -2,6 +2,7 @@ package control;
 
 import java.util.List;
 
+import gui.GUI;
 import model.Juego;
 import service.GestionJuegosService;
 import service.GestionJuegosServiceImpl;
