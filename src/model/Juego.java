@@ -1,4 +1,4 @@
-package model;
+nombre,package model;
 
 public class Juego {
 	private String nombre;

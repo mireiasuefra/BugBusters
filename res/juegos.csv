@@ -942,7 +942,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 942,Gran Turismo Concept 2001 Tokyo,PS2,2001,Racing,Unknown,0,1.1,0.42,0.33,1.84;
 943,Demon's Souls,PS3,2009,Role-Playing,Namco Bandai Games,0.97,0.34,0.35,0.18,1.84;
 944,NCAA Football 06,PS2,2005,Sports,Electronic Arts,1.53,0.05,0,0.25,1.84;
-945,Hey You Pikachu!,N64,1998,Simulation,Nintendo,0.83,0.06,0.93,0,1.83;
+"945,""Hey You, Pikachu!"",N64,1998,Simulation,Nintendo,0.83,0.06,0.93,0,1.83";
 946,2 Games in 1: Sonic Advance & ChuChu Rocket!,GBA,2005,Misc,THQ,1.31,0.49,0,0.03,1.83;
 947,World of Warcraft: Mists of Pandaria,PC,2012,Role-Playing,Activision,0.84,0.76,0,0.23,1.83;
 948,Jet Moto,PS,1996,Racing,Sony Computer Entertainment,1.33,0.4,0.03,0.07,1.83;
@@ -2408,7 +2408,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2408,Enduro,2600,1982,Misc,Quelle,0.81,0.05,0,0.01,0.87;
 2409,Tales of Xillia 2,PS3,2012,Role-Playing,Namco Bandai Games,0.2,0.15,0.45,0.07,0.87;
 2410,SingStar '90s,PS2,2007,Misc,Sony Computer Entertainment,0.1,0.59,0,0.18,0.87;
-"2411,Monster Strike 3DS,3DS,2015,Action,""mixi, Inc"",0,0,0.86,0,0.86";
+"2411,""Monster Strike 3DS"",3DS,2015,Action,mixi Inc,0,0,0.86,0,0.86";
 2412,Tomb Raider: Anniversary,Wii,2007,Action,Eidos Interactive,0.12,0.63,0,0.11,0.86;
 2413,Winning Eleven: Pro Evolution Soccer 2007,PSP,2006,Sports,Konami Digital Entertainment,0.01,0.72,0.12,0.01,0.86;
 2414,Darksiders II,PS3,2012,Action,THQ,0.35,0.37,0.01,0.14,0.86;
@@ -5223,7 +5223,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5223,Teenage Mutant Ninja Turtles: Smash-Up,Wii,2009,Fighting,Ubisoft,0.33,0,0,0.03,0.36;
 5224,Kinectimals: Now with Bears!,X360,2011,Misc,Microsoft Game Studios,0.27,0.06,0,0.03,0.36;
 5225,ESPN NFL Football,XB,2003,Sports,Sega,0.27,0.08,0,0.01,0.36;
-"5226,ATV/Monster Truck Mayhem,DS,2007,Racing,""Destination Software, Inc"",0.33,0,0,0.02,0.36";
+5226,ATV/Monster Truck Mayhem,DS,2007,Racing,Destination Software Inc,0.33,0,0,0.02,0.36;
 5227,Naruto: Ultimate Ninja 3 (JP sales),PS2,2005,Fighting,Atari,0,0,0.36,0,0.36;
 5228,Just Dance 2016,X360,2015,Misc,Ubisoft,0.23,0.1,0,0.03,0.36;
 5229,Worms: Open Warfare 2,DS,2007,Strategy,THQ,0.07,0.25,0,0.04,0.36;
@@ -9594,7 +9594,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 9594,Thor: God of Thunder,DS,2011,Action,Sega,0.09,0.03,0,0.01,0.13;
 9595,TOCA Race Driver 2: Ultimate Racing Simulator,XB,2004,Racing,Codemasters,0.09,0.03,0,0,0.13;
 9596,The Price is Right: Decades,Wii,2011,Misc,Ubisoft,0.12,0,0,0.01,0.13;
-"9597,Snood,GBA,2001,Puzzle,""Destination Software, Inc"",0.09,0.03,0,0,0.13";
+9597,Snood,GBA,2001,Puzzle,Destination Software Inc,0.09,0.03,0,0,0.13;
 9598,The Sky Crawlers: Innocent Aces,Wii,2008,Simulation,Namco Bandai Games,0.09,0.02,0.01,0.01,0.13;
 9599,Avatar: The Last Airbender - Into the Inferno,DS,2008,Adventure,THQ,0.11,0.01,0,0.01,0.13;
 9600,Fit in Six,PS3,2011,Sports,Ubisoft,0.12,0,0,0.01,0.13;
@@ -10728,7 +10728,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 10728,Ultra Street Fighter IV,PS4,2015,Fighting,Capcom,0,0.08,0,0.01,0.1;
 10729,Animal Planet: Vet Life,Wii,2009,Simulation,Activision,0.09,0,0,0.01,0.1;
 10730,Cubic Ninja,3DS,2011,Platform,Ubisoft,0.05,0.04,0,0.01,0.1;
-"10731,Championship Pony,DS,2008,Simulation,""Destination Software, Inc"",0.09,0,0,0.01,0.1";
+10731,Championship Pony,DS,2008,Simulation,Destination Software Inc,0.09,0,0,0.01,0.1;
 10732,Harvest Moon: Frantic Farming,DS,2009,Puzzle,Rising Star Games,0.08,0.01,0,0.01,0.1;
 10733,Rise of the Tomb Raider,PC,2016,Adventure,Square Enix,0,0.09,0,0.01,0.1;
 10734,Pinball Hall of Fame: The Williams Collection,3DS,2011,Misc,Crave Entertainment,0.09,0,0,0.01,0.1;
@@ -11366,7 +11366,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 11366,Strider 2,PS,2000,Platform,Virgin Interactive,0.05,0.03,0,0.01,0.08;
 11367,ShellShock 2: Blood Trails,PS3,2009,Shooter,Eidos Interactive,0.04,0.03,0,0.01,0.08;
 11368,Forbidden Siren 2,PS2,2006,Action,Sony Computer Entertainment,0,0,0.08,0,0.08;
-"11369,Board Game Classics,GBA,2005,Misc,""Destination Software, Inc"",0.06,0.02,0,0,0.08";
+11369,Board Game Classics,GBA,2005,Misc,Destination Software Inc,0.06,0.02,0,0,0.08;
 11370,Supremacy MMA,X360,2011,Fighting,505 Games,0.05,0.03,0,0.01,0.08;
 11371,Game of Thrones,PC,2012,Role-Playing,Focus Home Interactive,0,0.07,0,0.01,0.08;
 11372,Shin Megami Tensei: Digital Devil Saga 2,PS2,2005,Role-Playing,Ghostlight,0.04,0.03,0,0.01,0.08;
@@ -12861,7 +12861,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 12861,Shiren the Wanderer 5 Plus: Fortune Tower and the Dice of Fate,PSV,2015,Action,Aksys Games,0.01,0,0.04,0,0.05;
 "12862,""Murder, She Wrote"",PC,2009,Adventure,Focus Home Interactive,0,0.04,0,0.01,0.05";
 12863,Virtual Villagers: A New Home,DS,2010,Simulation,PQube,0.04,0.01,0,0,0.05;
-"12864,Wing Commander: Prophecy,GBA,2003,Simulation,""Destination Software, Inc"",0.04,0.01,0,0,0.05";
+12864,Wing Commander: Prophecy,GBA,2003,Simulation,Destination Software Inc,0.04,0.01,0,0,0.05;
 12865,Marc Ecko's Getting Up: Contents Under Pressure,PS2,2006,Action,Atari,0.03,0.02,0,0.01,0.05;
 12866,Learn Science,DS,2010,Misc,DreamCatcher Interactive,0.05,0,0,0,0.05;
 12867,Sega Soccer Slam,XB,2002,Sports,Sega,0.04,0.01,0,0,0.05;
@@ -13005,7 +13005,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 13005,MorphX,X360,2010,Shooter,505 Games,0.05,0,0,0,0.05;
 13006,Stranger of Sword City,PSV,2015,Role-Playing,Nippon Ichi Software,0.02,0.02,0,0.01,0.05;
 13007,Air Traffic Chaos,DS,2007,Simulation,Ertain,0.05,0,0,0,0.05;
-"13008,Battleship / Connect Four / Sorry! / Trouble,DS,2006,Puzzle,""Destination Software, Inc"",0.05,0,0,0,0.05";
+13008,Battleship / Connect Four / Sorry! / Trouble,DS,2006,Puzzle,Destination Software Inc,0.05,0,0,0,0.05;
 13009,Prism: Light the Way,DS,2007,Puzzle,Eidos Interactive,0.05,0,0,0,0.05;
 13010,Tiny Toon Adventures: Toonenstein - Dare to Scare,PS,1998,Action,Swing! Entertainment,0.03,0.02,0,0,0.05;
 13011,TV Anime: Fairy Tale Gekitou! Madoushi Kessen,DS,2010,Fighting,Hudson Soft,0,0,0.05,0,0.05;
@@ -14220,7 +14220,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 14221,First Queen: Ornic Senki,SNES,1994,Role-Playing,Culture Brain,0,0,0.03,0,0.03;
 14222,Call of Juarez: Bound in Blood,PC,2009,Shooter,Ubisoft,0,0.03,0,0.01,0.03;
 14223,Dream C Club Zero,X360,2011,Simulation,D3Publisher,0,0,0.03,0,0.03;
-"14224,Shining Stars,DS,2008,Action,""Destination Software, Inc"",0.03,0,0,0,0.03";
+14224,Shining Stars,DS,2008,Action,Destination Software Inc,0.03,0,0,0,0.03;
 14225,Tail Concerto,PS,1998,Adventure,Namco Bandai Games,0.02,0.01,0,0,0.03;
 14226,The Sum of All Fears,GC,2003,Shooter,Ubisoft,0.03,0.01,0,0,0.03;
 14227,James Pond: Codename Robocod,GBA,2005,Platform,Play It,0.02,0.01,0,0,0.03;
@@ -14776,7 +14776,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 14777,Farm Frenzy 3,DS,2011,Strategy,Unknown,0,0.02,0,0,0.03;
 14778,Strike Witches: Aoi no Dengekisen - Shin Taichou Funtousuru!,DS,2009,Action,Russel,0,0,0.03,0,0.03;
 14779,3DS Classic Collection,3DS,2016,Misc,Sega,0.02,0,0,0,0.03;
-"14780,Baldur's Gate: Dark Alliance,GBA,2004,Role-Playing,""Destination Software, Inc"",0.02,0.01,0,0,0.03";
+14780,Baldur's Gate: Dark Alliance,GBA,2004,Role-Playing,Destination Software Inc,0.02,0.01,0,0,0.03;
 14781,GRID Autosport,PC,2014,Racing,Codemasters,0,0.02,0,0,0.03;
 14782,The Adventures of Lomax,PS,1996,Platform,Psygnosis,0.01,0.01,0,0,0.03;
 14783,Neverwinter Nights Diamond,PC,2004,Role-Playing,Atari,0,0.02,0,0,0.03;
@@ -15361,7 +15361,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 15362,Minna de Dokusho: Keatai Shousetsu Desu,PSP,2008,Misc,Dorart,0,0,0.02,0,0.02;
 15363,Polar Bowler,DS,2008,Sports,Mumbo Jumbo,0.02,0,0,0,0.02;
 15364,Prehistorik Man,GBA,2001,Platform,THQ,0.01,0.01,0,0,0.02;
-"15365,F1 2002,GBA,2002,Racing,""Destination Software, Inc"",0.01,0.01,0,0,0.02";
+15365,F1 2002,GBA,2002,Racing,Destination Software Inc,0.01,0.01,0,0,0.02;
 15366,Chicago Enforcer,XB,2005,Shooter,Kemco,0.02,0,0,0,0.02;
 15367,Jinguuji Saburou DS: Akai Chou,DS,2010,Adventure,Arc System Works,0,0,0.02,0,0.02;
 15368,Dance Dance Revolution Extra Mix,PS,2001,Simulation,Konami Digital Entertainment,0,0,0.02,0,0.02;
@@ -16080,7 +16080,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 16081,Best Of Tests,DS,2008,Puzzle,Conspiracy Entertainment,0.01,0,0,0,0.01;
 16082,Egg Mania: Eggstreme Madness,XB,2002,Puzzle,Kemco,0.01,0,0,0,0.01;
 16083,Virtua Tennis 3,PC,2007,Sports,Sega,0,0.01,0,0,0.01;
-"16084,Pro Angler Moves,PS3,2012,Sports,""Interworks Unlimited, Inc."",0.01,0,0,0,0.01";
+16084,Pro Angler Moves,PS3,2012,Sports,Interworks Unlimited Inc.,0.01,0,0,0,0.01;
 16085,Sakura Sakura: Haru Urara,PSP,2010,Adventure,GN Software,0,0,0.01,0,0.01;
 16086,Uta no * Prince-Sama: Sweet Serenade,PSP,2011,Adventure,Broccoli,0,0,0.01,0,0.01;
 16087,The Legend of Heroes: Trails in the Sky Third Chapter,PS3,2013,Role-Playing,Falcom Corporation,0,0,0.01,0,0.01;
@@ -16147,7 +16147,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 16148,Mystery Legends: Beauty and the Beast,PC,2012,Puzzle,Focus Multimedia,0,0.01,0,0,0.01;
 16149,Fuuraiki 3,PSV,2015,Action,Unknown,0,0,0.01,0,0.01;
 16150,Chokkan! Asonde Relaxuma,DS,2008,Action,Rocket Company,0,0,0.01,0,0.01;
-"16151,Hot Wheels: Stunt Track Challenge / World Race,GBA,2006,Racing,""Destination Software, Inc"",0.01,0,0,0,0.01";
+16151,Hot Wheels: Stunt Track Challenge / World Race,GBA,2006,Racing,Destination Software Inc,0.01,0,0,0,0.01;
 16152,Minna no Conveni,DS,2010,Simulation,Taito,0,0,0.01,0,0.01;
 16153,Accel World: Kasoku no Chouten,PSP,2013,Adventure,Namco Bandai Games,0,0,0.01,0,0.01;
 16154,SoulCalibur Legends (JP sales),Wii,2007,Action,Namco Bandai Games,0,0,0.01,0,0.01;
@@ -16444,7 +16444,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 16445,Colin McRae Rally 2005 plus,PSP,2005,Racing,Codemasters,0,0,0.01,0,0.01;
 16446,Heart no Kuni no Alice: Wonderful Twin World,PSP,2014,Adventure,Quinrose,0,0,0.01,0,0.01;
 16447,Madagascar: Escape 2 Africa,PC,2008,Action,Activision,0.01,0,0,0,0.01;
-"16448,Wade Hixton's Counter Punch,GBA,2004,Sports,""Destination Software, Inc"",0.01,0,0,0,0.01";
+16448,Wade Hixton's Counter Punch,GBA,2004,Sports,Destination Software Inc,0.01,0,0,0,0.01;
 16449,Junjou Romanchika: Koi no Doki Doki Daisakusen,PS2,2008,Adventure,Marvelous Interactive,0,0,0.01,0,0.01;
 16450,Legacy of Kain: Defiance,PC,2003,Action,Eidos Interactive,0,0.01,0,0,0.01;
 16451,Assassin's Creed Chronicles,XOne,2016,Action,Ubisoft,0,0.01,0,0,0.01;
@@ -16563,7 +16563,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 16564,Kanokon: Esuii,PS2,2008,Adventure,5pb,0,0,0.01,0,0.01;
 16565,Mighty No. 9,XOne,2016,Platform,Deep Silver,0.01,0,0,0,0.01;
 16566,Mortal Kombat: Deadly Alliance,GBA,2002,Fighting,Midway Games,0.01,0,0,0,0.01;
-"16567,Original Frisbee Disc Sports: Ultimate & Golf,DS,2007,Action,""Destination Software, Inc"",0.01,0,0,0,0.01";
+16567,Original Frisbee Disc Sports: Ultimate & Golf,DS,2007,Action,Destination Software Inc,0.01,0,0,0,0.01;
 16568,Teslagrad,PSV,2015,Platform,Rain Games,0,0.01,0,0,0.01;
 16569,End of Nations,PC,2012,Strategy,Trion Worlds,0.01,0,0,0,0.01;
 16570,Fujiko F. Fujio Characters: Great Assembly! Slightly Fantastic Slapstick Party,3DS,2014,Action,Namco Bandai Games,0,0,0.01,0,0.01;
