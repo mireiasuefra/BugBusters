@@ -36,7 +36,7 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 		String plataforma = Utilidades.leerMensaje("\nIntroduce Plataforma de la lista: ");
 
 		GUI.mostrarListaGeneros();
-		String genero = Utilidades.leerMensaje("\nIntroduce Género de la lista: ");
+		String genero = Utilidades.leerMensaje("\nIntroduce Género de la lista");
 		Juego juego = new Juego(nombre, fechaPublicacion, editor, Platform.fromString(plataforma),
 				Genre.fromString(genero));
 
@@ -44,13 +44,13 @@ public class GestionJuegosServiceImpl implements GestionJuegosService {
 	}
 
 	@Override
-	public List<Juego> 	filtrarGenero(Genre genero) {
+	public List<Juego> filtrarGenero(Genre genero) {
 
-	return listaJuegos.listadoPorGenero(genero);
+		return listaJuegos.listadoPorGenero(genero);
 	}
 
 	@Override
-	public List<Juego> 	filtrarPlataforma(Platform plataforma) {
+	public List<Juego> filtrarPlataforma(Platform plataforma) {
 
 		return listaJuegos.listadoPorPlataforma(plataforma);
 	}
