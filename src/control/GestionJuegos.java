@@ -22,7 +22,7 @@ public class GestionJuegos {
 		
 		do {
 			GUI.mostrarMenu();
-			opcion = Utilidades.escribirInt("Elige una opcion: ");
+			opcion = Utilidades.leerInt("Elige una opcion: ");
 			
 			switch(opcion) {
 			case 1: //Listar juegos
