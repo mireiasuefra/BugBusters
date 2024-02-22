@@ -13,15 +13,12 @@ public class GUI {
 		System.out.println(">>>>>>> MENÚ LUCASTEAM <<<<<<<");
 		System.out.println("\t1. Mostrar listado Juegos");
 		System.out.println("\t2. Dar de Alta un Juego");
+		System.out.println("\t0. Salir");
 		System.out.println(">>>>>>>>>>>        <<<<<<<<<<<");
 
 	}
-	
 
-	
-	
-
-	public static void mostrarListaJuegos(List<Juego> listado) {
+	public static int mostrarListaJuegos(List<Juego> listado) {
 
 		System.out.println("\n>>>  Mostrando Listado de Juegos\n");
 
@@ -37,6 +34,7 @@ public class GUI {
 		}
 		System.out.println("\n>>>  Se han mostrado " + cantJuegos + " juegos\n");
 
+		return cantJuegos;
 	}
 
 	public static void mostrarListaPlataforma() {

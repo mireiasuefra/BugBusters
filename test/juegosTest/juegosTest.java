@@ -13,6 +13,8 @@ import static org.junit.Assert.assertTrue;
 import java.util.List;
 
 import datos.RepositorioJuegosImpl;
+import gui.GUI;
+import model.Genre;
 import model.Juego;
 import model.Platform;
 import datos.RepositorioJuegos;
@@ -63,13 +65,36 @@ public class juegosTest {
 		int i = 0;
 		int longitudCSV = repoJuegos.cargarDatosCSV();
 		List<Juego> listado = repoJuegos.listadoJuegos();
-		while(!contieneWii && i < listado.size()) {
-			if(listado.get(i).getPlataforma().equals(Platform.WII))
-					contieneWii = true;
+		while (!contieneWii && i < listado.size()) {
+			if (listado.get(i).getPlataforma().equals(Platform.WII))
+				contieneWii = true;
 			i++;
-			}
-		assertTrue(contieneWii);
 		}
+		assertTrue(contieneWii);
+	}
+
+	@Test
+	public void testLongitudListadoMostradoGUI() {
+		logger.info(
+				"Test::testLongitudListadoMostradoGUI(): Comprobamos que el listado de nuestro RepositorioJuegos es igual de largo que la cantidad de valores que se muestran al llamar mostrarListadoJuegos en el GUI");
+		int longitudCSV = repoJuegos.cargarDatosCSV();
+		List<Juego> listado = repoJuegos.listadoJuegos();
+		int longitudListado = listado.size();
+		
+		int cantidadMostrada = GUI.mostrarListaJuegos(listado);
+		assertTrue(cantidadMostrada == longitudListado);
+	}
 	
-	
+	@Test
+	public void testAumentadoListadoNuevoJuego() {
+		logger.info(
+				"Test::testAumentadoListadoNuevoJuego(): Comprobar que, al crear un juego, el número de juegos mostrados augmenta en 1");
+		int longitudCSV = repoJuegos.cargarDatosCSV();
+		List<Juego> listado = repoJuegos.listadoJuegos();
+		int longitudAntes = listado.size();
+		
+		repoJuegos.darDeAlta(new Juego("GTA VI", 2026, "Rockstar Games", Platform.PC, Genre.ACTION));
+		
+		assertTrue((longitudAntes + 1) == listado.size());
+	}
 }
