@@ -32,7 +32,6 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 		} catch (FileNotFoundException e) {
 			System.out.println(e.getMessage() + "res/juegos.csv not found");
 		}
-		GUI.mostrarListaJuegos(listado);
 		return longCSV;
 
 	}
@@ -64,7 +63,6 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 			
 			juego.setGenero(Genre.fromString(restoDatos[3]));
 			juego.setEditor(restoDatos[4]);
-			//System.out.println(restoDatos[2]);
 		} else {
 			String[] datosJuego = linea.split(",");
 			juego.setNombre(datosJuego[1]);
@@ -82,47 +80,6 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 		}
 		
 		return juego;
-		/*
-		Juego juego;
-		if(linea.contains("\"\"")) {
-			juego = new Juego("null", 0, "null", Platform.NULL, Genre.NULL);
-			return juego;
-		}
-		//System.out.println(linea);
-		
-		juego = new Juego();
-		int fecha = 0;
-		String[] datosJuego = linea.split(",");
-		juego.setNombre(datosJuego[1]);
-		juego.setPlataforma(Platform.fromString(datosJuego[2]));
-		try {
-			fecha = Integer.parseInt(datosJuego[3]);
-		} catch (NumberFormatException e) {
-			e.getMessage();
-		} finally {
-			juego.setFechaPublicacion(fecha);
-		}
-
-		juego.setGenero(Genre.fromString(datosJuego[4]));
-		juego.setEditor(datosJuego[5]);
-		++longCSV;
-//		String[] datosJuego = linea.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-//		String modifiedLine = linea.replaceAll("(?<!\")\\,", "_");
-
-//		String[] datosJuego = modifiedLine.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-//		String modifiedLine = linea.replaceAll(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", ";");
-
-//		String[] datosJuego = linea.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
-//		String[] datosJuego = modifiedLine.split("_");
-	
-//		System.out.println(datosJuego[0]);
-//		System.out.println(datosJuego[1]);
-//		System.out.println(datosJuego[2]);
-//		System.out.println(datosJuego[3]);
-//		System.out.println(datosJuego[4]);
-//		System.out.println(datosJuego[5]);
-		return juego;
-		*/
 	}
 
 	@Override
