@@ -86,6 +86,10 @@ public class RepositorioJuegosImpl implements RepositorioJuegos {
 	public List<Juego> listadoJuegos() {
 		return listado;
 	}
+	
+	public void darDeAlta(Juego juego) {
+		listado.add(juego);
+	}
 
 }
 
